@@ -7,7 +7,7 @@ Basics:
 - low coupling of Cucumber test cases with tests code: JUnit tests can be developed and run independent from Cucumber test cases
 - POM (Page Object Model) approach to UI 
 
-Technologies stack:\n 
+Technologies stack:<br>
  #Java #Selenium #JUnit #Cucumber #Spring
 
 Tests:  
