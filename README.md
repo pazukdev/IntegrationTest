@@ -1,17 +1,24 @@
 # MyIntegrationAutotest
 Approach to integration tests
 
-Bases:
-- config-driven test flow
+Basics:
+- config-based test flow
 - Cucumber test cases 
-- low coupling of Cucumber test cases to tests code: JUnit tests can be developed and run independent from Cucumber test cases
+- low coupling of Cucumber test cases with tests code: JUnit tests can be developed and run independent from Cucumber test cases
+- POM (Page Object Model) approach to UI 
 
-Technologies stack:
-#Java #Selenium #JUnit #Cucumber #Spring
+Technologies stack: 
+ #Java #Selenium #JUnit #Cucumber #Spring
 
-Tests:
-package test.searchfilter.product.flight
-AbstractFlightSearchFilterIT class
-FlightSearchFilterCucumberIT class
+Tests:  
+ package test.searchfilter.product.flight
+Cucumber: 
+ FlightSearchFilterCucumberIT class
+JUnit: 
+ OfferFilterFormSupplierFilterIT
+ SearchFormSupplierFilterIT
+ SearchFormDirectFlightFilterIT
+ SearchFormFlightClassFilterIT
+ SearchFormAirlineFilterIT
 
 
