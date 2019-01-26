@@ -6,19 +6,19 @@ Basics:
 - Cucumber test cases 
 - low coupling of Cucumber test cases with tests code: JUnit tests can be developed and run independent from Cucumber test cases
 - POM (Page Object Model) approach to UI 
-
-Technologies stack:<br>
- #Java #Selenium #JUnit #Cucumber #Spring
-
-Tests:  
- package test.searchfilter.product.flight
-Cucumber: 
- FlightSearchFilterCucumberIT class
-JUnit: 
- OfferFilterFormSupplierFilterIT
- SearchFormSupplierFilterIT
- SearchFormDirectFlightFilterIT
- SearchFormFlightClassFilterIT
- SearchFormAirlineFilterIT
+<br>
+Tools:<br>
+#Java #Selenium #JUnit #Cucumber #Spring
+<br>
+Tests:<br>  
+package test.searchfilter.product.flight
+Cucumber:<br> 
+FlightSearchFilterCucumberIT class
+JUnit:<br> 
+OfferFilterFormSupplierFilterIT
+SearchFormSupplierFilterIT
+SearchFormDirectFlightFilterIT
+SearchFormFlightClassFilterIT
+SearchFormAirlineFilterIT
 
 
