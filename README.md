@@ -1,4 +1,4 @@
-# MyIntegrationAutotest
+# IntegrationTest
 <p>Approach to integration tests</p>
 <p>Basics:</p>
 <ul>
