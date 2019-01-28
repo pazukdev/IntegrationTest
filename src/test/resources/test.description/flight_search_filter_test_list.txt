@@ -1,0 +1,8 @@
+Flight search entity.filter tests list
+
+| form                            | entity.filter        | class                                                                                                                                                 |
+| flight offer entity.filter form | supplier             | test.searchfilter.product.flight.AbstractFlightSearchFilterIT$OfferFilterFormSupplierFilterIT |
+| flight search form              | supplier             | test.searchfilter.product.flight.AbstractFlightSearchFilterIT$SearchFormSupplierFilterIT      |
+| flight search form              | direct flight        | test.searchfilter.product.flight.AbstractFlightSearchFilterIT$SearchFormDirectFlightFilterIT  |
+| flight search form              | flight class         | test.searchfilter.product.flight.AbstractFlightSearchFilterIT$SearchFormFlightClassFilterIT   |
+| flight search form              | airline              | test.searchfilter.product.flight.AbstractFlightSearchFilterIT$SearchFormAirlineFilterIT       |
