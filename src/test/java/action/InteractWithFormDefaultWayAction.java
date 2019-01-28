@@ -13,8 +13,7 @@ public class InteractWithFormDefaultWayAction implements Action {
     public DefaultInteractable form;
 
     @Override
-    public Boolean perform() {
+    public void perform() {
         form.interactDefaultWay();
-        return true;
     }
 }

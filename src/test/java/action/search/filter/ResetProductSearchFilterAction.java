@@ -22,9 +22,8 @@ public class ResetProductSearchFilterAction<T extends FilterApplier> implements 
     private final SearchFilter filter;
 
     @Override
-    public Boolean perform() {
+    public void perform() {
         getFilterApplier().resetFilter();
-        return true;
     }
 
     private FilterApplier getFilterApplier() {

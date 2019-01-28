@@ -14,9 +14,8 @@ public class CheckProductSearchFilterAction implements Action {
     private final Action concreteFilterCheckAction;
 
     @Override
-    public Boolean perform() {
+    public void perform() {
         concreteFilterCheckAction.perform();
-        return true;
     }
 
 }

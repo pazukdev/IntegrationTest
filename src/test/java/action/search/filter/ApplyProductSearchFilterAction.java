@@ -23,9 +23,8 @@ public class ApplyProductSearchFilterAction<T extends FilterApplier> implements 
     private final SearchFilter filter;
 
     @Override
-    public Boolean perform() {
+    public void perform() {
         getFilterApplier().applyFilter();
-        return true;
     }
 
     private FilterApplier getFilterApplier() {
