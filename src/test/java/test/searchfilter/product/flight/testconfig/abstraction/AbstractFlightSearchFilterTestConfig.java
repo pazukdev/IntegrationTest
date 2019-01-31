@@ -1,5 +1,6 @@
 package test.searchfilter.product.flight.testconfig.abstraction;
 
+import action.ProcessFlightSearchFormAction;
 import action.abstraction.Action;
 import action.search.filter.factory.ProductSearchFilterActionFactory;
 import entity.filter.SearchFilter;
