@@ -3,7 +3,6 @@ package action.search.filter.factory;
 import action.abstraction.Action;
 import action.abstraction.UndoableAction;
 import action.search.filter.ApplyProductSearchFilterAction;
-import action.search.filter.CheckProductSearchFilterAction;
 import entity.filter.SearchFilter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -22,19 +21,15 @@ public class ProductSearchFilterActionFactory {
     @NonNull
     private final SearchFilter filter;
     @NonNull
-    private final Action concreteFilterCheckAction;
+    private final Action checkAction;
 
-    public Action[] createDefaultActionsSequence() {
+    public Action[] createDefaultActionsChain() {
         final UndoableAction applyAction = createApplyAction();
-        return new Action[]{applyAction, createCheckAction(), applyAction.getUndo()};
+        return new Action[]{applyAction, checkAction, applyAction.getUndo()};
     }
 
     public UndoableAction createApplyAction() {
         return new ApplyProductSearchFilterAction(driver, applierType, filter);
-    }
-
-    public Action createCheckAction() {
-        return new CheckProductSearchFilterAction(concreteFilterCheckAction);
     }
 
 }
