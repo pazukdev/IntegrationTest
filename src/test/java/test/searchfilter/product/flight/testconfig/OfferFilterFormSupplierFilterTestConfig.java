@@ -28,7 +28,7 @@ public class OfferFilterFormSupplierFilterTestConfig extends AbstractFlightSearc
     }
 
     @Override
-    protected Action getConcreteFilterCheckAction(final SearchFilter filter) {
+    protected Action getFilterCheckAction(final SearchFilter filter) {
         return new SupplierFilterCheckAction((SupplierFilter) filter, driver);
     }
 

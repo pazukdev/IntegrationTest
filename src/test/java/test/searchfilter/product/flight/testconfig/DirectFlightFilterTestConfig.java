@@ -28,7 +28,7 @@ public class DirectFlightFilterTestConfig extends AbstractFlightSearchFilterTest
     }
 
     @Override
-    protected Action getConcreteFilterCheckAction(final SearchFilter filter) {
+    protected Action getFilterCheckAction(final SearchFilter filter) {
         return new DirectFlightFilterCheckAction((DirectFlightFilter) filter, driver);
     }
 }

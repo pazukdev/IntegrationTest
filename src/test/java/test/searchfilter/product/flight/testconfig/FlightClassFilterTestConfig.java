@@ -28,7 +28,7 @@ public class FlightClassFilterTestConfig extends AbstractFlightSearchFilterTestC
     }
 
     @Override
-    protected Action getConcreteFilterCheckAction(final SearchFilter filter) {
+    protected Action getFilterCheckAction(final SearchFilter filter) {
         return new FlightClassFilterCheckAction((FlightClassFilter) filter, driver);
     }
 

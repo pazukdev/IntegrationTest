@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/feature/product/flight",
         tags = {"@FlightSearchFilter"}
 )
 public class FlightSearchFilterCucumberIT {}

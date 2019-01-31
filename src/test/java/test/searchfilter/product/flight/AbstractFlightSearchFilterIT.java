@@ -2,51 +2,31 @@ package test.searchfilter.product.flight;
 
 import common.cucumber.annotation.Cucumberable;
 import lombok.extern.java.Log;
-import org.junit.Before;
-import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-import scenario.abstraction.Scenario;
 import test.searchfilter.product.flight.testconfig.AirlineFilterTestConfig;
 import test.searchfilter.product.flight.testconfig.DirectFlightFilterTestConfig;
 import test.searchfilter.product.flight.testconfig.FlightClassFilterTestConfig;
 import test.searchfilter.product.flight.testconfig.OfferFilterFormSupplierFilterTestConfig;
 import test.searchfilter.product.flight.testconfig.SearchFormSupplierFilterTestConfig;
-
-import javax.inject.Inject;
-import java.util.Set;
+import testcore.AbstractUITest;
 
 /**
- * Flight search entity.filter tests
+ * Flight search filter tests
  *
  * @author Siarhei Sviarkaltsau
  */
 @Cucumberable
 @Log
-public abstract class AbstractFlightSearchFilterIT extends MyAbstractUITest {
-
-    private Set<String> supplierCodesFromProperties;
-    @Inject
-    private String testingFeature;
-    @Inject
-    private Scenario testScenario;
+public abstract class AbstractFlightSearchFilterIT extends AbstractUITest {
 
     @Override
-    public void initDriverReqFields(final WebDriver driver) {
-        super.initDriverReqFields(driver);
-    }
-
-    @Before
-    public void start() {
-        supplierCodesFromProperties = getOrganizationCreator().getSupplierCodes();
-        flowCollectorArgumentsCreator.configure(supplierCodesFromProperties, testingFeature, HUBProduct.FLIGHT);
-    }
-
-    @Test
-    public void perform() {
-        performActions(testScenario);
+    protected CreateCompanyParams createCompanyParams() {
+        return new CreateCompanyParams.Builder()
+                .withCustomSuppliers(AMADEUS, MYSTIFLY, SABRE)
+                //.withHubFlow("src/test/resources/flow/BasicFlow_OfferFilterFormSupplierFilter_it.json")
+                .build();
     }
 
     // tests
