@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>uml.diagram.inheritance</OriginalElement>
+  <nodes>
+    <node x="379.5" y="751.0">uml.diagram.inheritance.DeveloperSearchScenario</node>
+    <node x="310.9285714285714" y="105.0">uml.diagram.inheritance.AbstractAction</node>
+    <node x="773.0" y="524.0">uml.diagram.inheritance.DeveloperSearchAsserter</node>
+    <node x="469.0" y="585.0">uml.diagram.inheritance.AbstractScenario</node>
+    <node x="791.75" y="0.0">uml.diagram.inheritance.Action</node>
+    <node x="0.0" y="536.0">uml.diagram.inheritance.DeveloperSearchAction</node>
+    <node x="1066.5" y="274.0">uml.diagram.inheritance.Asserter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="uml.diagram.inheritance.DeveloperSearchAsserter" target="uml.diagram.inheritance.AbstractAction">
+      <point x="-115.5" y="-88.5" />
+      <point x="888.5" y="499.0" />
+      <point x="759.2619047619048" y="499.0" />
+      <point x="179.33333333333337" y="184.5" />
+    </edge>
+    <edge source="uml.diagram.inheritance.AbstractScenario" target="uml.diagram.inheritance.AbstractAction">
+      <point x="0.0" y="-27.5" />
+      <point x="611.0" y="499.0" />
+      <point x="579.9285714285713" y="499.0" />
+      <point x="0.0" y="184.5" />
+    </edge>
+    <edge source="uml.diagram.inheritance.DeveloperSearchScenario" target="uml.diagram.inheritance.AbstractScenario">
+      <point x="0.0" y="-76.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="uml.diagram.inheritance.AbstractAction" target="uml.diagram.inheritance.Action">
+      <point x="0.0" y="-184.5" />
+      <point x="579.9285714285713" y="80.0" />
+      <point x="828.5" y="80.0" />
+      <point x="-36.75" y="27.5" />
+    </edge>
+    <edge source="uml.diagram.inheritance.DeveloperSearchAsserter" target="uml.diagram.inheritance.Asserter">
+      <point x="115.5" y="-88.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="uml.diagram.inheritance.DeveloperSearchAction" target="uml.diagram.inheritance.AbstractAction">
+      <point x="0.0" y="-76.5" />
+      <point x="224.5" y="499.0" />
+      <point x="400.595238095238" y="499.0" />
+      <point x="-179.33333333333337" y="184.5" />
+    </edge>
+    <edge source="uml.diagram.inheritance.Asserter" target="uml.diagram.inheritance.Action">
+      <point x="0.0" y="-15.5" />
+      <point x="1119.5" y="80.0" />
+      <point x="902.0" y="80.0" />
+      <point x="36.75" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="639.5" y="516.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>uml.diagram.composition</OriginalElement>
+  <nodes>
+    <node x="178.0" y="190.0">uml.diagram.composition.Asserter</node>
+    <node x="885.0" y="105.0">uml.diagram.composition.DeveloperSearchAction</node>
+    <node x="511.0" y="0.0">uml.diagram.composition.Action</node>
+    <node x="304.0" y="129.0">uml.diagram.composition.DeveloperSearchScenario</node>
+    <node x="0.0" y="356.0">uml.diagram.composition.DeveloperSearchAsserter</node>
+    <node x="0.0" y="602.0">uml.diagram.composition.SimpleAction</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="uml.diagram.composition.DeveloperSearchScenario" target="uml.diagram.composition.Action">
+      <point x="0.0" y="-76.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="uml.diagram.composition.Asserter" target="uml.diagram.composition.Action">
+      <point x="0.0" y="-15.5" />
+      <point x="231.0" y="80.0" />
+      <point x="535.5" y="80.0" />
+      <point x="-49.0" y="27.5" />
+    </edge>
+    <edge source="uml.diagram.composition.DeveloperSearchAction" target="uml.diagram.composition.Action">
+      <point x="0.0" y="-100.5" />
+      <point x="1158.5" y="80.0" />
+      <point x="633.5" y="80.0" />
+      <point x="49.0" y="27.5" />
+    </edge>
+    <edge source="uml.diagram.composition.DeveloperSearchAsserter" target="uml.diagram.composition.Asserter">
+      <point x="0.0" y="-100.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="716.5" y="400.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
