@@ -1,4 +1,4 @@
-package test.searchfilter.product.flight;
+package test.searchfilter.product.flight.cucumber;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -10,6 +10,6 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/feature",
-        tags = {"@FlightSearchFilter"}
+        tags = {"@HuntDeveloper"}
 )
-public class FlightSearchFilterCucumberIT {}
+public class DeveloperHuntCucumberIT {}

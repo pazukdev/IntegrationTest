@@ -14,21 +14,19 @@ import javax.annotation.Nonnull;
  */
 @Getter
 @RequiredArgsConstructor(access = AccessLevel.PRIVATE)
-public class DeveloperSearchPage {
+public class LoginPage {
 
-    @FindBy(xpath = "skillField")
-    private WebElement skillField;
-    @FindBy(xpath = "ageField")
-    private WebElement ageField;
-    @FindBy(xpath = "countrySelect")
-    private WebElement countrySelect;
-    @FindBy(xpath = "saveButton")
-    private WebElement saveButton;
+    @FindBy(xpath = "nameField")
+    private WebElement nameField;
+    @FindBy(xpath = "passwordField")
+    private WebElement passwordField;
+    @FindBy(xpath = "loginButton")
+    private WebElement loginButton;
 
     private final TestContext context;
 
-    public static DeveloperSearchPage create(@Nonnull final TestContext context) {
-        final DeveloperSearchPage page = new DeveloperSearchPage(context);
+    public static LoginPage create(@Nonnull final TestContext context) {
+        final LoginPage page = new LoginPage(context);
         PageFactory.initElements(context.getDriver(), page);
         return page;
     }

@@ -31,7 +31,7 @@ public class DeveloperSearchAction extends AbstractAction {
     }
 
     private void processSearchPage(@Nonnull final DeveloperSearchPage page) {
-        clearInputAndSendKeys(page.getNameField(), developer.getName());
+        clearInputAndSendKeys(page.getNameField(), developer.getSkill());
         clearInputAndSendKeys(page.getAgeField(), String.valueOf(developer.getAge()));
         selectDropDownByText(page.getCountrySelect(), developer.getCountry());
         clickAndWaitForLoading(page.getSaveButton());

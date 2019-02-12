@@ -31,7 +31,7 @@ public class DeveloperSearchAction implements uml.diagram.composition.Action {
     }
 
     private void processSearchPage(@Nonnull final DeveloperSearchPage page) {
-        simpleAction.clearInputAndSendKeys(page.getNameField(), developer.getName());
+        simpleAction.clearInputAndSendKeys(page.getNameField(), developer.getSkill());
         simpleAction.clearInputAndSendKeys(page.getAgeField(), String.valueOf(developer.getAge()));
         simpleAction.selectDropDownByText(page.getCountrySelect(), developer.getCountry());
         simpleAction.clickAndWaitForLoading(page.getSaveButton());
