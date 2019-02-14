@@ -13,7 +13,7 @@ import uml.core.User;
 /**
  * @author Siarhei Sviarkaltsau
  */
-public class DeveloperSearchCucumberIndependentIT extends AbstractIT {
+public class DeveloperSearchCucumberStep extends AbstractIT {
 
     private Developer expectedDeveloper;
 
@@ -24,14 +24,17 @@ public class DeveloperSearchCucumberIndependentIT extends AbstractIT {
     }
 
     @When("^user searches for developer: (.*), (.*), (.*)$")
-    public void searchDeveloper(final String skill, final String country, final Integer age) {
-        expectedDeveloper = Developer.create(skill, country, age);
+    public void searchDeveloper(final String skill, final String country, final String age) {
+        expectedDeveloper = Developer.create(skill, country, Integer.valueOf(age));
         DeveloperSearchAction.create(context, simpleAction, expectedDeveloper).perform();
     }
 
     @Then("^he (.*) the developer in search results$")
-    public void checkDeveloperSearchResult() {
-        DeveloperSearchAsserter.create(context, expectedDeveloper).perform();
+    public void checkDeveloperSearchResult(final String expectedResult) {
+        final boolean expectedTrue = expectedResult.equals("should see");
+        DeveloperSearchAsserter.create(expectedTrue, context, expectedDeveloper).perform();
     }
 
 }
+
+

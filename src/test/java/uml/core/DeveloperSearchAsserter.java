@@ -20,6 +20,12 @@ public class DeveloperSearchAsserter implements Asserter {
         return new DeveloperSearchAsserter(context, expectedDeveloper);
     }
 
+    public static DeveloperSearchAsserter create(@Nonnull final boolean expectedTrue,
+                                                 @Nonnull final TestContext context,
+                                                 @Nonnull final Developer expectedDeveloper) {
+        return new DeveloperSearchAsserter(context, expectedDeveloper);
+    }
+
     @Override
     public Boolean perform() {
         checkSearchResult();
