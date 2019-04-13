@@ -1,4 +1,5 @@
 # IntegrationTest
+<b>This library is not actual: it contains deprecated interfaces implementations and has no some actual concepts</b>
 <p>Approach to integration tests</p>
 <p>Basics:</p>
 <ul>
